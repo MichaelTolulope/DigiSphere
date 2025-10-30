@@ -1,0 +1,73 @@
+MIT License
+
+Copyright (c) 2024 SaaSify Landing Page Template
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
+THIRD-PARTY LICENSES
+
+This template uses the following third-party resources:
+
+1. Tailwind CSS
+   - License: MIT License
+   - Website: https://tailwindcss.com/
+   - Copyright (c) Tailwind Labs, Inc.
+
+2. Font Awesome
+   - License: Font Awesome Free License
+   - Website: https://fontawesome.com/
+   - Icons: CC BY 4.0 License
+   - Fonts: SIL OFL 1.1 License
+   - Code: MIT License
+
+3. Google Fonts (Inter)
+   - License: SIL Open Font License 1.1
+   - Website: https://fonts.google.com/
+   - Copyright (c) 2016-2020 The Inter Project Authors
+
+4. Unsplash Images (if used)
+   - License: Unsplash License
+   - Website: https://unsplash.com/license
+   - Free to use for commercial and non-commercial purposes
+
+All third-party resources are used in accordance with their respective licenses.
+Please ensure compliance with these licenses when using this template.
+
+================================================================================
+
+COMMERCIAL USE
+
+This template is free for both personal and commercial use. You may:
+- Use it for client projects
+- Modify and customize it
+- Include it in premium themes or templates (with attribution)
+- Sell websites built with this template
+
+Attribution is appreciated but not required.
+
+================================================================================
+
+DISCLAIMER
+
+This template is provided "as is" without warranty of any kind. The authors
+are not responsible for any damages or issues that may arise from using this
+template. Users are responsible for ensuring compliance with all applicable
+laws and regulations when using this template for their projects.

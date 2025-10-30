@@ -1,0 +1,90 @@
+{
+  "name": "saasify-landing-page",
+  "version": "1.0.0",
+  "description": "A modern, responsive SaaS landing page template built with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=index.html",
+    "build": "npm run build:css",
+    "build:css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch",
+    "preview": "live-server --port=3000 --open=index.html --no-browser",
+    "lint": "htmlhint *.html",
+    "validate": "html-validate *.html",
+    "optimize": "npm run optimize:images && npm run optimize:css",
+    "optimize:images": "imagemin assets/img/* --out-dir=assets/img/optimized",
+    "optimize:css": "cleancss -o assets/css/style.min.css assets/css/style.css"
+  },
+  "keywords": [
+    "saas",
+    "landing-page",
+    "template",
+    "tailwindcss",
+    "responsive",
+    "modern",
+    "conversion-optimized",
+    "startup",
+    "business",
+    "website"
+  ],
+  "author": {
+    "name": "SaaSify Template",
+    "email": "contact@saasify-template.com",
+    "url": "https://saasify-template.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/saasify-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/saasify-landing-page/issues"
+  },
+  "homepage": "https://github.com/your-username/saasify-landing-page#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.4.0",
+    "htmlhint": "^1.1.4",
+    "html-validate": "^8.7.4",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "clean-css-cli": "^5.6.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 10"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "files": [
+    "index.html",
+    "about.html",
+    "contact.html",
+    "assets/",
+    "docs/",
+    "demo/",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "config": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/your-username"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
