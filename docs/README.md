@@ -1,10 +1,10 @@
-# FlowEdge - Modern SaaS Landing Page Template
+# DigiSphere - Modern SaaS Landing Page Template
 
-![FlowEdge Logo](../assets/images/logo.png)
+![DigiSphere Logo](../assets/images/logo.png)
 
 ## Overview
 
-FlowEdge is a premium, modern SaaS landing page template designed to showcase workflow optimization solutions. Built with Tailwind CSS, it features a clean, minimal design with bold typography and smooth animations that convert visitors into customers.
+DigiSphere is a premium, modern SaaS landing page template designed to showcase workflow optimization solutions. Built with Tailwind CSS, it features a clean, minimal design with bold typography and smooth animations that convert visitors into customers.
 
 **Tagline:** "Your Workflow, Simplified."
 
@@ -61,7 +61,7 @@ Perfect for:
 
 ## 🎨 Brand Identity
 
-**FlowEdge** represents the cutting edge of workflow optimization:
+**DigiSphere** represents the cutting edge of workflow optimization:
 - **Logo**: Stream icon with gradient background
 - **Colors**: Blue to purple gradient scheme
 - **Typography**: Modern, clean fonts with excellent readability
@@ -94,7 +94,7 @@ For detailed customization instructions, see [customization.md](./customization.
 ## 🤝 Support
 
 For support and questions:
-- Email: support@flowedge.com
+- Email: support@DigiSphere.com
 - Documentation: Full guides available in the docs folder
 - Community: Join our developer community
 
@@ -106,4 +106,4 @@ This template is licensed for commercial use. See the license file for details.
 
 **Built with ❤️ for modern SaaS companies**
 
-*FlowEdge - Your Workflow, Simplified.*
+*DigiSphere - Your Workflow, Simplified.*

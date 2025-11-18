@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - FlowEdge</title>
+    <title>DigiSphere — Bringing Your Vision to Life</title>
     <meta
       name="description"
-      content="Learn about FlowEdge's mission to empower businesses with innovative SaaS solutions. Meet our team and discover our story."
+      content="DigiSphere — a 360° digital & creative agency: web, design, video, marketing, consulting and virtual assistant services to bring your vision to life."
     />
 
     <!-- Tailwind CSS CDN -->
@@ -54,11 +54,26 @@
     />
 
     <style>
+      :root{
+        --brand-blue: #0b74d1;   /* trust / technology */
+        --brand-teal: #06b6a4;   /* creativity / innovation */
+        --brand-orange: #ff7a18; /* creativity accent */
+        --brand-dark: #0f1724;   /* professional dark */
+      }
       body {
         font-family: "Inter", sans-serif;
       }
+      .logo-gradient {
+        background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-teal) 100%);
+      }
       .hero-gradient {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-teal) 100%);
+      }
+      .cta-gradient {
+        background: linear-gradient(90deg, var(--brand-orange) 0%, #ff944d 100%);
+      }
+      .accent-border {
+        border-color: var(--brand-teal);
       }
       .animate-fade-in {
         opacity: 1;
@@ -71,26 +86,27 @@
       }
     </style>
   </head>
-  <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+  <body class="bg-white dark:bg-[var(--brand-dark)] transition-colors duration-300 text-gray-800 dark:text-gray-100">
     <!-- Navigation -->
     <nav
-      class="bg-white dark:bg-gray-800 shadow-sm fixed w-full top-0 z-50 transition-colors duration-300"
+      class="bg-white dark:bg-[var(--brand-dark)] shadow-sm fixed w-full top-0 z-50 transition-colors duration-300"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
           <div class="flex items-center">
-            <a href="/index.html">
+            <a href="/index.html" aria-label="DigiSphere home">
               <div class="flex items-center">
                 <div
-                  class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-3"
+                  class="w-10 h-10 logo-gradient rounded-xl flex items-center justify-center mr-3"
                 >
                   <i class="fas fa-stream text-white text-lg"></i>
                 </div>
                 <h3
-                  class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+                  class="text-2xl font-bold bg-clip-text text-transparent"
+                  style="background: linear-gradient(90deg,var(--brand-blue),var(--brand-teal)); -webkit-background-clip: text;"
                 >
-                  FlowEdge
+                  DigiSphere
                 </h3>
               </div>
             </a>
@@ -100,28 +116,28 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-8">
               <a
-                href="index.html#features"
-                class="nav-link text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
-                >Features</a
+                href="index.html#services"
+                class="nav-link text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
+                >Services</a
+              >
+              <a
+                href="index.html#work"
+                class="nav-link text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
+                >Work</a
               >
               <a
                 href="index.html#pricing"
-                class="nav-link text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
+                class="nav-link text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
                 >Pricing</a
               >
               <a
-                href="index.html#testimonials"
-                class="nav-link text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
-                >Testimonials</a
-              >
-              <a
                 href="about.html"
-                class="nav-link text-blue-600 dark:text-blue-400 px-3 py-2 text-sm font-medium transition-all duration-300 relative"
+                class="nav-link text-[var(--brand-blue)] dark:text-[var(--brand-teal)] px-3 py-2 text-sm font-medium transition-all duration-300 relative"
                 >About</a
               >
               <a
                 href="contact.html"
-                class="nav-link text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
+                class="nav-link text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 relative"
                 >Contact</a
               >
               <!-- Dark Mode Toggle -->
@@ -139,8 +155,8 @@
               </button>
               <a
                 href="#"
-                class="nav-cta-btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                >Start Free Trial</a
+                class="nav-cta-btn cta-gradient text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                >Get Started</a
               >
             </div>
           </div>
@@ -162,7 +178,7 @@
             <button
               id="hamburger"
               onclick="toggleMobileMenu()"
-              class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
+              class="text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white focus:outline-none p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
             >
               <i class="fas fa-bars text-xl"></i>
             </button>
@@ -173,118 +189,110 @@
       <!-- Mobile Navigation -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-white dark:bg-gray-800 border-t dark:border-gray-700 transition-all duration-300 backdrop-blur-lg"
+        class="hidden md:hidden bg-white dark:bg-[var(--brand-dark)] border-t dark:border-gray-700 transition-all duration-300 backdrop-blur-lg"
       >
         <div class="px-4 pt-4 pb-6 space-y-2">
           <a
-            href="index.html#features"
-            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
-            >Features</a
+            href="index.html#services"
+            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+            >Services</a
+          >
+          <a
+            href="index.html#work"
+            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+            >Work</a
           >
           <a
             href="index.html#pricing"
-            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
             >Pricing</a
           >
           <a
-            href="index.html#testimonials"
-            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
-            >Testimonials</a
-          >
-          <a
             href="about.html"
-            class="mobile-nav-link block px-4 py-3 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+            class="mobile-nav-link block px-4 py-3 text-[var(--brand-blue)] dark:text-[var(--brand-teal)] rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
             >About</a
           >
           <a
             href="contact.html"
-            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+            class="mobile-nav-link block px-4 py-3 text-gray-600 hover:text-[var(--brand-dark)] dark:text-gray-300 dark:hover:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
             >Contact</a
           >
           <a
             href="#"
-            class="block px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl mx-2 text-center font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 mt-4"
-            >Start Free Trial</a
+            class="block px-4 py-3 cta-gradient text-white rounded-xl mx-2 text-center font-medium transition-all duration-300 hover:scale-105 mt-4"
+            >Get Started</a
           >
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="modern-hero-gradient pt-20 pb-16 lg:pt-32 lg:pb-24">
+    <section class="hero-gradient pt-20 pb-16 lg:pt-32 lg:pb-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center">
           <h1
             class="text-4xl md:text-6xl font-bold text-white mb-6 hero-title-animate"
           >
-            About FlowEdge
+            Bringing Your Vision to Life
           </h1>
           <p
-            class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto hero-text-animate"
+            class="text-xl md:text-2xl text-teal-100 mb-8 max-w-3xl mx-auto hero-text-animate"
           >
-            We're on a mission to empower 50,000+ businesses worldwide with
-            innovative SaaS solutions that drive exponential growth and lasting
-            success.
+            DigiSphere is a 360° digital & creative agency delivering branding,
+            web, video, marketing, consulting and virtual assistant services — all
+            designed to help small and large organizations grow.
           </p>
+          <div class="flex justify-center gap-4">
+            <a class="cta-gradient text-white px-6 py-3 rounded-lg font-semibold" href="#">Start a Project</a>
+            <a class="bg-white text-[var(--brand-blue)] px-6 py-3 rounded-lg font-semibold" href="contact.html">Contact Sales</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Our Story Section -->
-    <section
-      class="py-16 lg:py-24 bg-white dark:bg-gray-900 transition-colors duration-300"
-    >
+    <!-- About & Story Section -->
+    <section class="py-16 lg:py-24 bg-white dark:bg-[var(--brand-dark)] transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="animate-on-scroll">
-            <h2
-              class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6"
-            >
-              Our Story
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Who We Are
             </h2>
-            <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              Founded in 2018, SaaSify emerged from a simple observation:
-              businesses were struggling to scale efficiently due to fragmented
-              tools and complex workflows. Our founders, having experienced
-              these challenges firsthand at Fortune 500 companies, set out to
-              create a unified platform that would revolutionize business
-              operations.
+            <p class="text-lg mb-4 text-gray-700 dark:text-gray-200">
+              DigiSphere combines creative design, technical engineering and
+              marketing strategy into a single, expert-led practice. Since our
+              founding, we've focused on building clear brand experiences and
+              measurable digital results for startups, SMEs and enterprises.
             </p>
-            <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              What started as a small team of passionate developers has grown
-              into a global company serving 50,000+ businesses across 80+
-              countries. We've maintained our core values of simplicity,
-              reliability, and customer-centricity throughout our journey, while
-              achieving industry-leading 99.9% uptime and 4.9/5 customer
-              satisfaction.
+            <p class="text-lg mb-4 text-gray-700 dark:text-gray-200">
+              Our approach is simple: understand your goals, design an elegant
+              plan, and deliver with transparency and measurable outcomes.
+              We provide full-service support — from brand identity and websites
+              to campaign execution, video, training and virtual assistant help.
             </p>
-            <p class="text-lg text-gray-600 dark:text-gray-300">
-              Today, FlowEdge continues to innovate with AI-powered features and
-              enterprise-grade security, helping businesses of all sizes achieve
-              their goals through powerful, intuitive software solutions that
-              drive measurable results.
+            <p class="text-lg text-gray-700 dark:text-gray-200">
+              Tagline: “Bringing Your Vision to Life through Digital Solutions.”
             </p>
           </div>
+
           <div class="animate-on-scroll">
-            <div
-              class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-8 text-white"
-            >
+            <div class="bg-[linear-gradient(135deg,var(--brand-blue),var(--brand-teal))] rounded-xl p-8 text-white">
               <div class="grid grid-cols-2 gap-6">
                 <div class="text-center">
+                  <div class="text-3xl font-bold mb-2">360°</div>
+                  <div class="text-teal-100">Full-Service Agency</div>
+                </div>
+                <div class="text-center">
                   <div class="text-3xl font-bold mb-2">50K+</div>
-                  <div class="text-blue-100">Happy Customers</div>
+                  <div class="text-teal-100">Businesses Reached</div>
                 </div>
                 <div class="text-center">
                   <div class="text-3xl font-bold mb-2">80+</div>
-                  <div class="text-blue-100">Countries</div>
+                  <div class="text-teal-100">Countries Served</div>
                 </div>
                 <div class="text-center">
-                  <div class="text-3xl font-bold mb-2">99.9%</div>
-                  <div class="text-blue-100">Uptime SLA</div>
-                </div>
-                <div class="text-center">
-                  <div class="text-3xl font-bold mb-2">4.9/5</div>
-                  <div class="text-blue-100">Customer Rating</div>
+                  <div class="text-3xl font-bold mb-2">Trusted</div>
+                  <div class="text-teal-100">Expert-Led Team</div>
                 </div>
               </div>
             </div>
@@ -293,49 +301,98 @@
       </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="py-16 lg:py-24 bg-gray-50 dark:bg-[#071021]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Services We Offer</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">A 360° suite built to launch, grow and scale digital businesses.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 bg-[var(--brand-blue)] text-white rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Graphics & Branding</h3>
+            <p class="text-sm text-gray-600">Logos, brand kits, social creatives and marketing assets that capture your identity.</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 bg-[var(--brand-teal)] text-white rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Web Design & Development</h3>
+            <p class="text-sm text-gray-600">Business sites, portfolios, and e-commerce with modern UX and reliable performance.</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 bg-[var(--brand-orange)] text-white rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Video & Motion</h3>
+            <p class="text-sm text-gray-600">Promotional videos, ads, and motion graphics that increase engagement.</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 bg-[var(--brand-blue)] text-white rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Digital Marketing</h3>
+            <p class="text-sm text-gray-600">Social, ads, SEO and email campaigns focused on measurable growth.</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 bg-[var(--brand-teal)] text-white rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Consulting & Training</h3>
+            <p class="text-sm text-gray-600">Strategic guidance and hands-on training for teams and leaders.</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 bg-[var(--brand-orange)] text-white rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Virtual Assistant Services</h3>
+            <p class="text-sm text-gray-600">Admin support, customer care, scheduling, data and workflow support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Mission & Vision Section -->
-    <section class="py-16 lg:py-24 bg-gray-50">
+    <section class="py-16 lg:py-24 bg-white dark:bg-[var(--brand-dark)]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 animate-on-scroll">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
             Our Mission & Vision
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Driving the future of business technology with purpose and
-            innovation.
+          <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            To empower organizations to communicate, convert and scale through creative design, reliable technology and data-driven marketing.
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Mission -->
           <div class="bg-white rounded-xl shadow-lg p-8 animate-on-scroll">
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-bullseye text-blue-600 text-2xl"></i>
+            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-bullseye text-[var(--brand-blue)] text-2xl"></i>
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
             <p class="text-gray-600 text-lg leading-relaxed">
-              To democratize access to enterprise-grade business tools by
-              creating intuitive, AI-powered SaaS solutions that enable
-              companies of all sizes to compete and thrive in the digital
-              economy, driving measurable growth and operational excellence.
+              Deliver cohesive digital experiences and support systems that make growth predictable and sustainable for businesses and organizations.
             </p>
           </div>
 
           <!-- Vision -->
           <div class="bg-white rounded-xl shadow-lg p-8 animate-on-scroll">
-            <div
-              class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-eye text-purple-600 text-2xl"></i>
+            <div class="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-eye text-[var(--brand-teal)] text-2xl"></i>
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
             <p class="text-gray-600 text-lg leading-relaxed">
-              To become the world's most trusted platform for business
-              transformation, where every entrepreneur and enterprise can access
-              cutting-edge tools and insights they need to turn their boldest
-              visions into measurable success stories.
+              To be the most trusted partner for organizations seeking to turn ideas into visible, measurable digital success.
             </p>
           </div>
         </div>
@@ -347,183 +404,89 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 animate-on-scroll">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Core Values
+            Core Principles
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            The principles that guide everything we do.
+            The values that guide our work and client relationships.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Value 1 -->
           <div class="text-center animate-on-scroll">
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
-            >
-              <i class="fas fa-heart text-blue-600 text-xl"></i>
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-users text-[var(--brand-blue)] text-xl"></i>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
-              Customer First
-            </h3>
-            <p class="text-gray-600">
-              Every decision we make starts with our customers' needs and
-              success in mind.
-            </p>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Client First</h3>
+            <p class="text-gray-600">We measure success by the business outcomes we deliver for clients.</p>
           </div>
 
-          <!-- Value 2 -->
           <div class="text-center animate-on-scroll">
-            <div
-              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
-            >
-              <i class="fas fa-lightbulb text-green-600 text-xl"></i>
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-lightbulb text-[var(--brand-teal)] text-xl"></i>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">Innovation</h3>
-            <p class="text-gray-600">
-              We continuously push boundaries to create solutions that shape the
-              future.
-            </p>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Creative Impact</h3>
+            <p class="text-gray-600">Design and storytelling that drives recognition and conversion.</p>
           </div>
 
-          <!-- Value 3 -->
           <div class="text-center animate-on-scroll">
-            <div
-              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
-            >
-              <i class="fas fa-handshake text-orange-600 text-xl"></i>
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-shield-alt text-[var(--brand-orange)] text-xl"></i>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-3">Integrity</h3>
-            <p class="text-gray-600">
-              We build trust through transparency, honesty, and ethical business
-              practices.
-            </p>
+            <p class="text-gray-600">Transparent, ethical processes and clear reporting.</p>
           </div>
 
-          <!-- Value 4 -->
           <div class="text-center animate-on-scroll">
-            <div
-              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
-            >
-              <i class="fas fa-users text-purple-600 text-xl"></i>
+            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-hand-holding-heart text-[var(--brand-blue)] text-xl"></i>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
-              Collaboration
-            </h3>
-            <p class="text-gray-600">
-              We believe great things happen when diverse minds work together
-              toward common goals.
-            </p>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Collaboration</h3>
+            <p class="text-gray-600">Partnerships built on communication and shared goals.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Team Section -->
-    <section class="py-16 lg:py-24 bg-gray-50">
+    <section class="py-16 lg:py-24 bg-gray-50 dark:bg-[#071021]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 animate-on-scroll">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Meet Our Leadership Team
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            Expert-Led Team
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            The visionaries and experts driving SaaSify's mission forward.
+          <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            A small core of experienced strategists, designers and engineers delivering enterprise outcomes with agency flexibility.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Team Member 1 -->
-          <div
-            class="bg-white rounded-xl shadow-lg p-8 text-center animate-on-scroll"
-          >
-            <div
-              class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4"
-            >
-              AJ
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">
-              Alex Johnson
-            </h3>
-            <p class="text-blue-600 font-medium mb-4">CEO & Co-Founder</p>
-            <p class="text-gray-600 mb-4">
-              Former VP of Engineering at TechCorp. 15+ years building scalable
-              platforms.
-            </p>
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-24 h-24 bg-[var(--brand-blue)] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">AJ</div>
+            <h3 class="text-xl font-semibold mb-2">Alex Johnson</h3>
+            <p class="text-[var(--brand-blue)] font-medium mb-2">CEO & Founder</p>
+            <p class="text-gray-600 mb-4">Strategy and operations leader focused on scalable growth systems.</p>
             <div class="flex justify-center space-x-4">
-              <a
-                href="#"
-                class="text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <i class="fab fa-linkedin text-xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <i class="fab fa-twitter text-xl"></i>
-              </a>
+              <a href="#" class="text-gray-400 hover:text-[var(--brand-blue)]"><i class="fab fa-linkedin text-xl"></i></a>
             </div>
           </div>
 
-          <!-- Team Member 2 -->
-          <div
-            class="bg-white rounded-xl shadow-lg p-8 text-center animate-on-scroll"
-          >
-            <div
-              class="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4"
-            >
-              SC
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sarah Chen</h3>
-            <p class="text-blue-600 font-medium mb-4">CTO & Co-Founder</p>
-            <p class="text-gray-600 mb-4">
-              Former Lead Architect at CloudScale. Expert in distributed systems
-              and AI.
-            </p>
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-24 h-24 bg-[var(--brand-teal)] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">SC</div>
+            <h3 class="text-xl font-semibold mb-2">Sarah Chen</h3>
+            <p class="text-[var(--brand-teal)] font-medium mb-2">CTO & Co-Founder</p>
+            <p class="text-gray-600 mb-4">Technical lead with deep experience in cloud platforms and AI.</p>
             <div class="flex justify-center space-x-4">
-              <a
-                href="#"
-                class="text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <i class="fab fa-linkedin text-xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <i class="fab fa-github text-xl"></i>
-              </a>
+              <a href="#" class="text-gray-400 hover:text-[var(--brand-teal)]"><i class="fab fa-linkedin text-xl"></i></a>
             </div>
           </div>
 
-          <!-- Team Member 3 -->
-          <div
-            class="bg-white rounded-xl shadow-lg p-8 text-center animate-on-scroll"
-          >
-            <div
-              class="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4"
-            >
-              MR
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">
-              Michael Rodriguez
-            </h3>
-            <p class="text-blue-600 font-medium mb-4">VP of Product</p>
-            <p class="text-gray-600 mb-4">
-              Product strategy expert with 12+ years at leading SaaS companies.
-            </p>
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-24 h-24 bg-[var(--brand-orange)] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">MR</div>
+            <h3 class="text-xl font-semibold mb-2">Michael Rodriguez</h3>
+            <p class="text-[var(--brand-orange)] font-medium mb-2">VP of Product</p>
+            <p class="text-gray-600 mb-4">Product strategist who turns customer insight into high-value features.</p>
             <div class="flex justify-center space-x-4">
-              <a
-                href="#"
-                class="text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <i class="fab fa-linkedin text-xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <i class="fab fa-twitter text-xl"></i>
-              </a>
+              <a href="#" class="text-gray-400 hover:text-[var(--brand-orange)]"><i class="fab fa-linkedin text-xl"></i></a>
             </div>
           </div>
         </div>
@@ -531,194 +494,83 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 lg:py-24 bg-blue-600">
+    <section class="py-16 lg:py-24 bg-[var(--brand-blue)]">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="animate-on-scroll">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Join Our Journey?
+            Ready to Bring Your Vision to Life?
           </h2>
-          <p class="text-xl text-blue-100 mb-8">
-            Be part of the future of business technology. Start your free trial
-            today.
+          <p class="text-xl text-teal-100 mb-8">
+            Work with an expert-led team that handles design, build and growth — end-to-end.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#"
-              class="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200"
-            >
-              Start Free Trial
-            </a>
-            <a
-              href="contact.html"
-              class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200"
-            >
-              Contact Us
-            </a>
+            <a href="#" class="bg-white text-[var(--brand-blue)] font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200">Start a Project</a>
+            <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-[var(--brand-blue)] font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200">Contact Us</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-[var(--brand-dark)] text-white py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Company Info -->
           <div>
             <div class="flex items-center mb-6">
-              <div
-                class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-3"
-              >
+              <div class="w-10 h-10 logo-gradient rounded-xl flex items-center justify-center mr-3"
+              style="background: linear-gradient(90deg,var(--brand-blue),var(--brand-teal));">
                 <i class="fas fa-stream text-white text-lg"></i>
               </div>
-              <h3
-                class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
-              >
-                FlowEdge
-              </h3>
+              <h3 class="text-2xl font-bold bg-clip-text text-transparent" style="background: linear-gradient(90deg,var(--brand-blue),var(--brand-teal)); -webkit-background-clip: text;">DigiSphere</h3>
             </div>
-            <p class="text-gray-400 mb-4">
-              Empowering businesses to scale with confidence through innovative
-              SaaS solutions.
-            </p>
+            <p class="text-gray-400 mb-4">A one-stop digital solutions hub delivering brand, product and growth services.</p>
             <div class="flex space-x-4">
-              <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-              >
-                <i class="fab fa-twitter text-xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-              >
-                <i class="fab fa-linkedin text-xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-              >
-                <i class="fab fa-github text-xl"></i>
-              </a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
             </div>
           </div>
 
-          <!-- Product -->
+          <!-- Services -->
           <div>
-            <h4 class="text-lg font-semibold mb-4">Product</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="index.html#features"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Features</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#pricing"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Integrations</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >API</a
-                >
-              </li>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="index.html#services" class="hover:text-white">Graphics & Branding</a></li>
+              <li><a href="index.html#services" class="hover:text-white">Web Design & Dev</a></li>
+              <li><a href="index.html#services" class="hover:text-white">Video & Motion</a></li>
+              <li><a href="index.html#services" class="hover:text-white">Digital Marketing</a></li>
             </ul>
           </div>
 
           <!-- Company -->
           <div>
             <h4 class="text-lg font-semibold mb-4">Company</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="about.html"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Careers</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="contact.html"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Contact</a
-                >
-              </li>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="about.html" class="hover:text-white">About</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Blog</a></li>
+              <li><a href="contact.html" class="hover:text-white">Contact</a></li>
             </ul>
           </div>
 
           <!-- Support -->
           <div>
             <h4 class="text-lg font-semibold mb-4">Support</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Help Center</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Documentation</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Status</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Security</a
-                >
-              </li>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white">Help Center</a></li>
+              <li><a href="#" class="hover:text-white">Documentation</a></li>
+              <li><a href="#" class="hover:text-white">Status</a></li>
+              <li><a href="#" class="hover:text-white">Privacy & Security</a></li>
             </ul>
           </div>
         </div>
 
         <div class="border-t border-gray-800 mt-8 pt-8 text-center">
           <p class="text-gray-400">
-            &copy; 2024 SaaSify. All rights reserved. |
-            <a href="#" class="hover:text-white transition-colors"
-              >Privacy Policy</a
-            >
-            |
-            <a href="#" class="hover:text-white transition-colors"
-              >Terms of Service</a
-            >
+            &copy; 2025 DigiSphere. All rights reserved. |
+            <a href="#" class="hover:text-white">Privacy Policy</a> |
+            <a href="#" class="hover:text-white">Terms of Service</a>
           </p>
         </div>
       </div>
@@ -727,5 +579,13 @@
     <!-- Scripts -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // simple mobile toggle (keeps original behavior)
+      function toggleMobileMenu(){
+        const menu = document.getElementById('mobile-menu');
+        if(menu.classList.contains('hidden')) menu.classList.remove('hidden');
+        else menu.classList.add('hidden');
+      }
+    </script>
   </body>
 </html>

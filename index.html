@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowEdge - Your Workflow, Simplified</title>
-    <meta name="description" content="FlowEdge streamlines your SaaS workflows with intelligent automation. Boost productivity and simplify complex processes. Start your free trial today.">
+    <title>DigiSphere — Bringing Your Vision to Life</title>
+    <meta name="description" content="DigiSphere — a 360° digital & creative agency delivering branding, web, video, marketing, consulting and virtual assistant services to bring your vision to life.">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -45,8 +45,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
+        :root{
+            --brand-blue: #0b74d1;
+            --brand-teal: #06b6a4;
+            --brand-orange: #ff7a18;
+            --brand-dark: #0f1724;
+        }
         body { font-family: 'Inter', sans-serif; }
-        .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .hero-gradient { background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-teal) 60%); }
         .animate-fade-in { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
         .animate-on-scroll { opacity: 0; transform: translateY(30px); }
     </style>
@@ -58,11 +64,11 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center">
-                         <div class="flex items-center">
-                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-3">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 logo-gradient rounded-xl flex items-center justify-center mr-3">
                             <i class="fas fa-stream text-white text-lg"></i>
                         </div>
-                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">FlowEdge</h3> 
+                        <h3 class="text-2xl font-bold bg-clip-text text-transparent" style=" background: linear-gradient(90deg,var(--brand-blue),var(--brand-teal)); -webkit-background-clip: text;">DigiSphere</h3>
                     </div>
                 </div>
                 
@@ -79,7 +85,7 @@
                             <i id="theme-icon" class="fas fa-moon dark:hidden transition-all duration-300"></i>
                             <i class="fas fa-sun hidden dark:block transition-all duration-300"></i>
                         </button>
-                        <a href="#" class="nav-cta-btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">Start Free Trial</a>
+                        <a href="#" class="nav-cta-btn cta-gradient text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">Get Started</a>
                     </div>
                 </div>
                 
@@ -124,27 +130,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
-                <div class="text-left lg:pr-8">
+                <div class="text-left lg:pr-2">
                     <div class="hero-content-animate">
-                        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                            <span class="bg-gradient-to-r from-white via-blue-50 to-indigo-100 bg-clip-text text-transparent hero-title-animate">FlowEdge</span>
-                            <br>
-                            <span class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white hero-subtitle-animate">Streamline Your Workflow</span>
+                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight hero-title-animate">
+                            
+                            DigiSphere <br> Bringing Your Vision to Life
                         </h1>
-                        <p class="text-xl md:text-2xl text-white mb-10 max-w-2xl leading-relaxed hero-text-animate">
-                            Elevate your productivity with seamless automation and collaboration tools designed for modern teams.
+                        <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl leading-relaxed hero-text-animate">
+                            A 360° digital & creative agency delivering branding, web, video, marketing, consulting and virtual assistant services to help organizations grow.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-6 mb-8 hero-buttons-animate">
-                            <button class="modern-btn-primary group relative overflow-hidden font-semibold py-4 px-10 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105">
-                                <span class="relative z-10">Start Free Trial</span>
-                                <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            </button>
-                            <button class="modern-btn-outline group font-semibold py-4 px-10 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105">
-                                <span class="flex items-center gap-2">
-                                    <i class="fas fa-play-circle"></i>
-                                    Watch Demo
-                                </span>
-                            </button>
+                            <a href="#" class="cta-gradient text-white inline-block text-center font-semibold py-4 px-8 rounded-2xl text-lg">Start a Project</a>
+                            <a href="#work" class="modern-btn-outline inline-block font-semibold py-4 px-8 rounded-2xl text-lg">View Work</a>
                         </div>
                         <p class="text-white text-sm opacity-90 hero-trust-animate">No credit card required • 14-day free trial • Cancel anytime</p>
                     </div>
@@ -160,11 +157,11 @@
                                 <defs>
                                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                                         <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#4b74a2;stop-opacity:1" />
                                     </linearGradient>
                                     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                                        <stop offset="0%" style="stop-color:#fbc593c8;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#f58c57;stop-opacity:1" />
                                     </linearGradient>
                                     <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
                                         <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
@@ -205,8 +202,8 @@
         <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-transparent to-purple-50 dark:from-blue-900/20 dark:via-transparent dark:to-purple-900/20"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Powerful Features for Modern Workflows</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Everything you need to streamline your processes and boost productivity with FlowEdge.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Services to Launch, Grow & Scale</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Branding, websites, video, marketing, consulting and virtual assistant services — a full-service digital partner.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -215,8 +212,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i class="fas fa-rocket text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Intelligent Automation</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Automate repetitive tasks with AI-powered workflows. Reduce manual work by 80% and focus on what matters most to your business growth.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Graphics & Branding</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Logos, brand kits, social creatives and marketing assets that capture your identity and tell your story.</p>
                 </div>
                 
                 <!-- Feature 2 -->
@@ -224,8 +221,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i class="fas fa-sync-alt text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Real-time Sync</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Keep your team aligned with instant updates across all platforms. Changes sync in real-time with 99.9% uptime guarantee.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Web Design & Development</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Business websites, portfolios and e‑commerce with modern UX and reliable performance.</p>
                 </div>
                 
                 <!-- Feature 3 -->
@@ -233,8 +230,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i class="fas fa-chart-line text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Smart Analytics</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Get actionable insights with AI-powered analytics. Track performance, identify bottlenecks, and optimize workflows for maximum efficiency.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Video & Motion</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Promotional videos, ads and motion graphics that increase engagement and conversion.</p>
                 </div>
                 
                 <!-- Feature 4 -->
@@ -242,8 +239,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i class="fas fa-users text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Team Collaboration</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Seamless team coordination with real-time updates, shared workspaces, and intelligent task distribution across your organization.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Digital Marketing</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Social media management, ads, SEO and email campaigns focused on measurable growth.</p>
                 </div>
                 
                 <!-- Feature 5 -->
@@ -251,8 +248,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i class="fas fa-plug text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Smart Integrations</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Connect with 1,000+ apps effortlessly. One-click setup with popular tools like Slack, Salesforce, and custom API integrations.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Consulting & Training</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Guidance and training to help teams and leaders adopt digital tools and best practices.</p>
                 </div>
                 
                 <!-- Feature 6 -->
@@ -260,8 +257,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i class="fas fa-shield-alt text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Enterprise Security</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Bank-level security with SOC 2 compliance, end-to-end encryption, and 24/7 monitoring to keep your data safe.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Virtual Assistant Services</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Admin support, customer care, scheduling, data and workflow support to free your team.</p>
                 </div>
                 
 
@@ -438,7 +435,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Trusted by 50,000+ Companies Worldwide</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">See how businesses like yours are achieving remarkable results with FlowEdge.</p>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">See how businesses like yours are achieving remarkable results with DigiSphere.</p>
                 
                 <!-- Stats -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 max-w-4xl mx-auto">
@@ -473,7 +470,7 @@
                             <i class="fas fa-star text-sm"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">"FlowEdge transformed our chaotic project management into a streamlined operation. We've seen a 40% productivity boost and our team collaboration has never been better. The ROI was evident within the first month."</p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">"DigiSphere transformed our chaotic project management into a streamlined operation. We've seen a 40% productivity boost and our team collaboration has never been better. The ROI was evident within the first month."</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold mr-4 shadow-lg">
                             SM
@@ -519,7 +516,7 @@
                             <i class="fas fa-star text-sm"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">"From 10 to 500 employees, FlowEdge scaled seamlessly with us. Their support team feels like an extension of our company. We couldn't have achieved our 300% growth without this platform."</p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">"From 10 to 500 employees, DigiSphere scaled seamlessly with us. Their support team feels like an extension of our company. We couldn't have achieved our 300% growth without this platform."</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold mr-4 shadow-lg">
                             EC
@@ -535,32 +532,22 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 lg:py-24 bg-gradient-to-r from-blue-700 via-purple-700 to-blue-900 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 relative overflow-hidden animate-on-scroll">
-        <div class="absolute inset-0 bg-black/20 dark:bg-black/40"></div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div class="animate-on-scroll">
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                    Ready to Simplify Your Workflow?
-                </h2>
-                <p class="text-xl text-white dark:text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Join thousands of teams already using FlowEdge to streamline operations, boost productivity, and achieve exceptional results.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                    <button class="modern-btn-primary py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                        <i class="fas fa-handshake mr-2"></i>
-                        Hire Us
-                    </button>
-                    <button class="modern-btn-outline py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105">
-                        <i class="fas fa-calendar-alt mr-2"></i>
-                        Book A Meeting
-                    </button>
-                </div>
-                <p class="text-white dark:text-gray-200 mt-8 text-sm font-medium">
-                    ✓ Free consultation ✓ Custom solutions ✓ Expert support
-                </p>
-            </div>
-        </div>
-    </section>
+    <section class="py-16 lg:py-24 bg-[var(--brand-blue)] relative overflow-hidden animate-on-scroll">
+         <div class="absolute inset-0 bg-black/20 dark:bg-black/40"></div>
+         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+             <div class="animate-on-scroll">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Ready to Bring Your Vision to Life?</h2>
+                <p class="text-xl text-teal-100 mb-10 max-w-2xl mx-auto leading-relaxed">Work with an expert-led team that handles design, build and growth — end-to-end.</p>
+                 <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a class="cta-gradient text-white py-4 px-8 rounded-xl text-lg inline-flex items-center justify-center" href="#"><i class="fas fa-briefcase mr-2"></i>Start a Project</a>
+                    <a class="modern-btn-outline py-4 px-8 rounded-xl text-lg inline-flex items-center justify-center" href="#contact"><i class="fas fa-calendar-alt mr-2"></i>Book a Meeting</a>
+                 </div>
+                 <p class="text-white dark:text-gray-200 mt-8 text-sm font-medium">
+                     ✓ Free consultation ✓ Custom solutions ✓ Expert support
+                 </p>
+             </div>
+         </div>
+     </section>
 
     <!-- Contact Form Section -->
     <section id="contact" class="py-16 lg:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
@@ -618,7 +605,8 @@
                     </div>
                     
                     <div class="text-center">
-                        <button type="submit" class="modern-btn-primary font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+                        <button type="submit" class="text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105"
+                        style="background: linear-gradient(90deg,var(--brand-blue),var(--brand-teal)); ">
                             <i class="fas fa-paper-plane mr-2"></i>
                             Send Message
                         </button>
@@ -635,12 +623,14 @@
                 <!-- Company Info -->
                 <div class="md:col-span-1">
                     <div class="flex items-center mb-6">
-                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-3">
+                        <div class="w-10 h-10 rounded-xl flex items-center justify-center mr-3"
+                        style="background: linear-gradient(90deg,var(--brand-blue),var(--brand-teal))">
                             <i class="fas fa-stream text-white text-lg"></i>
                         </div>
-                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">FlowEdge</h3>
+                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+                        style="background: linear-gradient(90deg,var(--brand-blue),var(--brand-teal)); -webkit-background-clip: text">DigiSphere</h3>
                     </div>
-                    <p class="text-gray-400 dark:text-gray-300 mb-6 leading-relaxed">Your Workflow, Simplified. Empowering teams worldwide to streamline operations and achieve exceptional results.</p>
+                    <p class="text-gray-400 dark:text-gray-300 mb-6 leading-relaxed">A one-stop digital solutions hub delivering creative, technical and marketing services to bring your vision to life.</p>
                     <div class="mb-6">
                         <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Trusted by industry leaders:</p>
                         <div class="flex flex-wrap gap-2 text-gray-500 dark:text-gray-400 text-sm">
@@ -704,7 +694,7 @@
             <div class="border-t border-gray-800 dark:border-gray-700 mt-12 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <p class="text-gray-400 dark:text-gray-300 text-sm">
-                        &copy; 2024 FlowEdge. All rights reserved. Built with passion for workflow excellence.
+                        &copy; 2025 DigiSphere. All rights reserved.
                     </p>
                     <div class="flex space-x-6 text-sm">
                         <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300">Privacy Policy</a>
@@ -715,9 +705,9 @@
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
+     
+     <!-- Scripts -->
+     <script src="assets/js/plugins.js"></script>
+     <script src="assets/js/main.js"></script>
+ </body>
+ </html>

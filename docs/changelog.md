@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the FlowEdge landing page template will be documented in this file.
+All notable changes to the DigiSphere landing page template will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -10,14 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🎉 Initial Release
 
 #### Added
-- **Complete FlowEdge Landing Page Template**
+- **Complete DigiSphere Landing Page Template**
   - Modern, responsive design with Tailwind CSS
-  - Professional SaaS branding with "FlowEdge" identity
+  - Professional SaaS branding with "DigiSphere" identity
   - Tagline: "Your Workflow, Simplified"
 
 #### 🎨 Design Features
 - **Hero Section**
-  - Large, bold headline with FlowEdge branding
+  - Large, bold headline with DigiSphere branding
   - Compelling tagline and subheading
   - Gradient background with modern aesthetics
   - Clear call-to-action buttons
@@ -49,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Mobile-optimized layout
 
 - **Footer**
-  - FlowEdge branding and company information
+  - DigiSphere branding and company information
   - Quick navigation links (Product, Company, Support)
   - Social media icons with hover effects
   - Professional layout with dark mode support
@@ -103,7 +103,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### 🛠️ Technical Implementation
 - **Tailwind CSS 3.3.0**
   - Utility-first CSS framework
-  - Custom configuration for FlowEdge branding
+  - Custom configuration for DigiSphere branding
   - Responsive design utilities
   - Dark mode support
 
@@ -190,7 +190,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### 📦 File Structure
 ```
-FlowEdge-Landing-Page/
+DigiSphere-Landing-Page/
 ├── index.html              # Main landing page
 ├── docs/                   # Documentation folder
 │   ├── README.md          # Project overview
@@ -227,7 +227,7 @@ FlowEdge-Landing-Page/
 
 ### Version 1.0.0 Highlights
 
-This initial release of the FlowEdge landing page template provides a complete, professional SaaS landing page solution. Built with modern web technologies and best practices, it offers:
+This initial release of the DigiSphere landing page template provides a complete, professional SaaS landing page solution. Built with modern web technologies and best practices, it offers:
 
 ✅ **Complete Design System** - Consistent branding and styling throughout
 ✅ **Responsive Layout** - Perfect on all devices and screen sizes
@@ -251,7 +251,7 @@ This initial release of the FlowEdge landing page template provides a complete, 
 
 ## 🤝 Contributing
 
-We welcome contributions to improve the FlowEdge template! Please:
+We welcome contributions to improve the DigiSphere template! Please:
 
 1. Fork the repository
 2. Create a feature branch
@@ -273,4 +273,4 @@ For support, questions, or feature requests:
 **Compatibility**: Modern browsers, Tailwind CSS 3.x  
 **License**: MIT License  
 
-*Thank you for choosing FlowEdge! We're excited to see what you build with it.*
+*Thank you for choosing DigiSphere! We're excited to see what you build with it.*

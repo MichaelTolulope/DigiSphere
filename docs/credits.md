@@ -1,6 +1,6 @@
 # Credits
 
-This document lists all the third-party resources, libraries, and assets used in the FlowEdge landing page template.
+This document lists all the third-party resources, libraries, and assets used in the DigiSphere landing page template.
 
 ## 🎨 Design Framework
 

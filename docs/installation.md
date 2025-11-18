@@ -3,12 +3,12 @@
 ## Quick Setup
 
 ### 1. Download & Extract
-1. Download the FlowEdge template package
+1. Download the DigiSphere template package
 2. Extract all files to your desired directory
 3. Ensure the folder structure is intact:
 
 ```
-flowedge-template/
+DigiSphere-template/
 ├── index.html
 ├── assets/
 │   ├── css/
@@ -23,7 +23,7 @@ flowedge-template/
 ### 2. Open in Browser
 1. Navigate to the template folder
 2. Double-click `index.html` to open in your default browser
-3. The page should load with the FlowEdge design
+3. The page should load with the DigiSphere design
 
 ### 3. Test Functionality
 - Toggle between light and dark modes using the theme switcher
@@ -81,8 +81,8 @@ demo/               # Demo images and preview files
 Edit the `<head>` section in `index.html`:
 
 ```html
-<title>FlowEdge - Your Workflow, Simplified</title>
-<meta name="description" content="Streamline your workflow with FlowEdge">
+<title>DigiSphere - Your Workflow, Simplified</title>
+<meta name="description" content="Streamline your workflow with DigiSphere">
 <meta name="keywords" content="workflow, productivity, saas, automation">
 ```
 
@@ -215,4 +215,4 @@ After installation:
 
 ---
 
-**Ready to customize your FlowEdge template!**
+**Ready to customize your DigiSphere template!**

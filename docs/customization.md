@@ -1,19 +1,19 @@
 # Customization Guide
 
-This guide will help you customize the FlowEdge landing page template to match your brand and requirements.
+This guide will help you customize the DigiSphere landing page template to match your brand and requirements.
 
 ## 🎨 Brand Customization
 
 ### 1. Logo and Brand Name
 
 #### Updating the Logo
-Replace the FlowEdge logo in the navigation:
+Replace the DigiSphere logo in the navigation:
 
 ```html
 <!-- In index.html, find the navigation section -->
 <div class="flex items-center">
     <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-        FlowEdge <!-- Replace with your brand name -->
+        DigiSphere <!-- Replace with your brand name -->
     </div>
 </div>
 ```

@@ -1,4 +1,4 @@
-// FlowEdge Landing Page JavaScript
+// DigiSphere Landing Page JavaScript
 // Modern SaaS landing page with dark mode and interactive features
 
 // Mobile menu toggle
