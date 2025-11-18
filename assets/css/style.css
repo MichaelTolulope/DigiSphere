@@ -95,7 +95,7 @@
 }
 
 .dark .modern-hero-gradient::before {
-    background: linear-gradient(-45deg, rgba(59, 91, 219, 0.9), rgba(95, 61, 196, 0.9), rgba(218, 62, 123, 0.9), rgba(230, 73, 128, 0.9));
+    background: linear-gradient(-45deg, rgba(59, 91, 219, 0.9),rgba(59, 91, 219, 0.9),#f6864e7b, rgba(11,116,209,0.95), rgba(6,182,164,0.9),  rgba(255,122,24,0.08));
     background-size: 400% 400%;
 }
 
